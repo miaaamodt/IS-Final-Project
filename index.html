@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mia's Homebase Page</title>
+
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      background: linear-gradient(135deg, #fae295, #f9b8a6);
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: block;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      color: white;
+      text-shadow: 1px 1px #444;
+    }
+
+    header, h2 {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: rgb(102, 146, 255);
+      padding: 30px;
+      text-align: center;
+      border-radius: 10px;
+      margin: 20px;
+    }
+
+    button {
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1.2rem;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0);
+      transition: transform 0.2s ease, background-color 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #ff1493;
+      transform: scale(1.05);
+    }
+
+    .card {
+      background-color: #fffacd;
+      border: 4px dashed #ffa07a;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 25px;
+      box-shadow: 5px 5px #f08080;
+    }
+
+    a {
+      color: #9370db;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      color: #ff4400ea;
+      text-decoration: underline wavy #ff69b4;
+    }
+
+    h1, h2, h3 {
+      color: #ff6347;
+      text-shadow: 1px 1px #ffd700;
+    }
+
+    .main-container {
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header {
+      font-size: 3rem;
+      background-image: url('../images/your-header-image.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #b1e3fe;
+      padding: 40px 20px;
+      text-shadow: 2px 2px 6px #000;
+      border-radius: 15px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      background-image: url('../images/your-header-image.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #b1e3fe;
+      padding: 20px;
+      text-shadow: 1px 1px 5px #000;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+
+    nav {
+      margin-bottom: 20px;
+      font-size: 1.2rem;
+    }
+
+    nav a {
+      color: #ff69b4;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .centered-list {
+      list-style-position: inside;
+      text-align: left;
+      display: inline-block;
+      margin-bottom: 30px;
+      max-width: 600px;
+      font-size: 1.4rem;
+      line-height: 1.6;
+    }
+
+    .spacer {
+      height: 50px;
+    }
+
+    .video-player, .tableau-container {
+      margin-bottom: 40px;
+    }
+
+    .info-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    .info-section img {
+      margin-top: 40px;
+      border-radius: 10px;
+    }
+
+    .tableau-container {
+      width: 100%;
+      max-width: 2000px;
+      margin: 50px auto;
+      text-align: center;
+    }
+
+    .tableau-container object,
+    .tableau-container iframe {
+      width: 100% !important;
+      height: 700px !important;
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+  <header>Mia's Homebase Page</header>
+  <h2>Where you can find any important information about the one and only!</h2>
+
+  <nav>
+    <a href="resume.html">Resume</a> |
+    <a href="webapp.html">Wordle ;)</a>
+  </nav>
+
+  <div class="info-section">
+    <ul class="centered-list">
+      <li>Some Fun Facts about me!:
+        <ol>
+          <li>I was born in Seattle</li>
+          <li>I love house plants</li>
+          <li>I love cooking</li>
+        </ol>
+      </li>
+      <li>Why these modules?:
+        <ol>
+          <li>I love my family they mean the world to me</li>
+          <li>This was the coolest Tableau chart</li>
+          <li>My little brother loves the Minecraft movie</li>
+        </ol>
+      </li>
+    </ul>
+  </div>
+
+  <img src="assets/img/IMG_1308.jpeg" alt="The fam" width="500">
+
+  <!-- Tableau Embed -->
+  <div class="tableau-container">
+    <div class="tableauPlaceholder" id="viz1744997725769" style="position: relative">
+      <noscript>
+        <a href="#"><img alt="Birthday" src="https://public.tableau.com/static/images/4B/4BB6H8TZ3/1_rss.png" style="border: none" /></a>
+      </noscript>
+      <object class="tableauViz" style="display:none;">
+        <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+        <param name="embed_code_version" value="3" />
+        <param name="path" value="shared/4BB6H8TZ3" />
+        <param name="toolbar" value="yes" />
+        <param name="static_image" value="https://public.tableau.com/static/images/4B/4BB6H8TZ3/1.png" />
+        <param name="animate_transition" value="yes" />
+        <param name="display_static_image" value="yes" />
+        <param name="display_spinner" value="yes" />
+        <param name="display_overlay" value="yes" />
+        <param name="display_count" value="yes" />
+        <param name="language" value="en-US" />
+      </object>
+    </div>
+    <script type="text/javascript">
+      var divElement = document.getElementById('viz1744997725769');
+      var vizElement = divElement.getElementsByTagName('object')[0];
+      vizElement.style.width = '100%';
+      vizElement.style.height = '700px';
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+  </div>
+
+  <!-- YouTube Video Embed -->
+  <div class="video-player">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/naJtI4bS6O4?si=xSMrYREXWdWeJAww"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+  </div>
+
+</body>
+</html>
